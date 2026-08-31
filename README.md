@@ -1,7 +1,7 @@
 #Bootcamp Git Project
-#Sesi Git 1## Tujuan
+#Sesi Git 1
+## Tujuan
 Belajar Git Workflow Local.
 ## Purpose
-# tambah di hujung fail:
-# ## Senarai Arahan
+## Senarai Arahan
 # - git init / git add / git commit
