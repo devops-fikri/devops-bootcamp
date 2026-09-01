@@ -5,3 +5,4 @@ Belajar Git Workflow Local.
 ## Purpose
 ## Senarai Arahan
 # - git init / git add / git commit## Tarikh
+## Diubah dari laptop
