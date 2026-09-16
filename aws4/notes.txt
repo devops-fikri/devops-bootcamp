@@ -1,0 +1,12 @@
+[
+    [
+        "nat-0840d5236df457a3d",
+        "deleted"
+    ]
+]
+[
+    "54.255.224.2"
+]
+[
+    "551626543935.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/fikri"
+]
