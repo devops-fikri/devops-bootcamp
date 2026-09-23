@@ -1,0 +1,4 @@
+elastic-ip: 18.136.91.242
+web: web.boyot.my (A record, proxied)
+tunnel: cloudflare2.boyot.my
+ssl-mode: Flexible
