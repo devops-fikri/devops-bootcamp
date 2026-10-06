@@ -1,0 +1,9 @@
+551626543935.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/devops-fikri:v1   42c821398757        105MB         31.6MB   U    
+551626543935.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/fikri:v1          42c821398757        105MB         31.6MB   U    
+NETWORK ID     NAME      DRIVER    SCOPE
+ee414f95c748   arena     bridge    local
+54f3e561de6f   bridge    bridge    local
+b28c58babb31   host      host      local
+5e36990e2744   none      null      local
+DRIVER    VOLUME NAME
+local     me
