@@ -8,7 +8,7 @@ resource "aws_vpc" "my_vpc" {
 resource "aws_subnet" "my_subnet" {
   vpc_id                  = aws_vpc.my_vpc.id
   cidr_block              = "10.20.1.0/24"
-  availability_zone       = "ap-southeast-1a"
+  availability_zone       = var.az
   map_public_ip_on_launch = true
   tags = {
     Name = "tf-subnet-public"
@@ -38,4 +38,33 @@ resource "aws_route" "my_route" {
 resource "aws_route_table_association" "my_link" {
   subnet_id      = aws_subnet.my_subnet.id
   route_table_id = aws_route_table.my_route_table.id
+}
+
+
+# Private subnet
+resource "aws_subnet" "private_subnet" {
+  vpc_id            = aws_vpc.my_vpc.id
+  cidr_block        = "10.20.2.0/24"
+  availability_zone = var.az
+
+  map_public_ip_on_launch = false
+
+  tags = {
+    Name = "tf-subnet-private"
+  }
+}
+
+# Private route table
+resource "aws_route_table" "private_route_table" {
+  vpc_id = aws_vpc.my_vpc.id
+
+  tags = {
+    Name = "tf-rt-private"
+  }
+}
+
+# Associate private subnet with private route table
+resource "aws_route_table_association" "private_association" {
+  subnet_id      = aws_subnet.private_subnet.id
+  route_table_id = aws_route_table.private_route_table.id
 }

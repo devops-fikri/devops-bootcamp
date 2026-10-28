@@ -24,3 +24,29 @@ resource "aws_instance" "my_server_1" {
     Name = "tf-server-1"
   }
 }
+
+# < bersambung
+resource "aws_instance" "my_server_2" {
+  ami                    = data.aws_ami.my_ami.id
+  instance_type          = "t3.micro"
+  subnet_id              = aws_subnet.my_subnet.id
+  vpc_security_group_ids = [aws_security_group.my_sg.id]
+  iam_instance_profile   = data.aws_iam_instance_profile.my_ssm_profile.name
+
+  tags = {
+    Name = "tf-server-2"
+  }
+}
+
+# Private server - Private subnet
+resource "aws_instance" "my_server_private" {
+  ami                    = data.aws_ami.my_ami.id
+  instance_type          = "t3.micro"
+  subnet_id              = aws_subnet.private_subnet.id
+  vpc_security_group_ids = [aws_security_group.private_sg.id]
+  iam_instance_profile   = data.aws_iam_instance_profile.my_ssm_profile.name
+
+  tags = {
+    Name = "tf-server-private"
+  }
+}
