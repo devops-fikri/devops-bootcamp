@@ -1,0 +1,5 @@
+{
+    "UserId": "<USER_ID>",
+    "Account": "<ACCOUNT_ID>",
+    "Arn": "arn:aws:iam::<ACCOUNT_ID>:user/devops-fikri"
+}

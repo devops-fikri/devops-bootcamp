@@ -4,3 +4,13 @@
 .terraform/
 *.tfstate
 *.tfstate.*
+.terraform.tfstate.lock.info
+crash.log
+*.tfvars
+!example.tfvars
+*.pem
+*.key
+inventory.ini
+*:Zone.Identifier
+*.deb
+.DS_Store

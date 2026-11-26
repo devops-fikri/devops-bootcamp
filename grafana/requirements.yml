@@ -1,0 +1,4 @@
+collections:
+  - name: prometheus.prometheus
+roles:
+  - name: geerlingguy.docker

@@ -8,5 +8,5 @@
     "54.255.224.2"
 ]
 [
-    "551626543935.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/fikri"
+    "<ACCOUNT_ID>.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/fikri"
 ]
